@@ -17,11 +17,12 @@ slider.oninput =  function(){
 
 function generatePassword(){
     let pass="";
-    for(i = 0, n = charset.length; i < sliderElement.value; i++){
+    for(let i = 0, n = charset.length; i < sliderElement.value; ++i){
     pass += charset.charAt(math.floor(math.random() * n));
     }   
 
 }
+console.log(pass);
 containerPassword.classList.remove("hide");
 password.innerHTML = pass;
 novaSenha = pass;
