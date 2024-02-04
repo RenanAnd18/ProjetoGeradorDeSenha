@@ -10,12 +10,13 @@
 <body>
  
     <img class= 'logo' src="./img/logo.png" alt="Gerador de Senha Logo">
-    <main class = "conteiner-input">
+    
+    <div class = "conteiner-input">
         <span>Tamanho <span id="valor"></span> Caracteres</span>
         <input id="slider" class="slider" type="range" min="5" max="25" value="25"/>
         <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
 
-    </main>
+    </div>
 
     <div id="conteiner-password" onclick="copyPassword()" class="conteiner-password hide">
         <span class="title">Sua senha gerada foi:</span>
